@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "esgf-validate"
+version = "0.1.0"
+description = ""
+authors = ["Nathan Collier <nathaniel.collier@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pystac-client = "^0.8.5"
+tqdm = "^4.67.1"
+deepdiff = "^8.0.1"
+pyaml = "^24.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
