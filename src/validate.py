@@ -51,6 +51,10 @@ def validate_stac_endpoints(
 
         # There should only be a single comparison item
         com_item = list(com_results.items_as_dicts())
+        if not com_item:
+            logger.error(f"ref item does not exist in com!\nid={ref_item['id']}")
+            endpoints_validated = False
+            continue
         assert len(com_item) == 1
         com_item = com_item[0]
 
